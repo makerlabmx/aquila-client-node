@@ -1,6 +1,6 @@
 # Aquila Client
 
-Biblioteca para aplicaciones cliente de la API Aquila.
+Biblioteca para aplicaciones cliente de la API Aquila en node.js.
 Facilita la creación de aplicaciones que consuman esta API.
 
 ## Funcionalidades
@@ -14,7 +14,9 @@ Facilita la creación de aplicaciones que consuman esta API.
 
 ## Instalación
 
-Próximamente estará en npm.
+```
+npm install aquila-client
+```
 
 ## Uso
 
