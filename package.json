@@ -1,6 +1,7 @@
 {
   "name": "aquila-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "main": "aquila.js",
   "dependencies": {
     "request": "^2.45.0",
     "socket.io-client": "^1.1.0"

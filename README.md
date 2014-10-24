@@ -21,7 +21,7 @@ npm install aquila-client
 ## Uso
 
 ```
-var Aquila = require("aquila");
+var Aquila = require("aquila-client");
 // specify your hub url
 aq = new Aquila("http://localhost:8080");
 
