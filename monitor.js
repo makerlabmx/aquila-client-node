@@ -24,7 +24,7 @@ aq.login(config.user, config.password, function(err)
 			aq.manager.socket.on("deviceAdded", function(){ console.log("\nLOG: Device Added"); });
 			aq.manager.socket.on("deviceRemoved", function(){ console.log("\nLOG: Device Removed"); });
 			aq.manager.socket.on("event", function(device, eventN, param){ 
-					console.log("\nLOG: Got Event from: ", device.name, ", Event: ", eventN, ", Param: ", param) 
+					console.log("\nLOG: Got Event from: ", device.name, ", Event: ", eventN, ", Param: ", param);
 				});
 		}
 

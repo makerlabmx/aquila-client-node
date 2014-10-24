@@ -9,5 +9,9 @@
     "grunt": "~0.4.5",
     "grunt-cli": "latest",
     "grunt-contrib-jshint": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/makerlabmx/aquila-client-node.git"
   }
 }

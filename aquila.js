@@ -5,8 +5,8 @@ var util = require("util");
 
 var arrayCmp = function(arr1, arr2)
 {
-	if (arr1.length == arr2.length
-	&& arr1.every(function(u, i) {
+	if (arr1.length === arr2.length && arr1.every(function(u, i) 
+	{
 		return u === arr2[i];
 	})
 	) {
@@ -65,11 +65,12 @@ Aquila.prototype.devices = function(query)
 {
 	var self = this;
 	var selection = [];
+	var i;
 	if(!query || query === "*") return new AquilaDevices(self.manager, self._devices);
 	// search by address
 	if(util.isArray(query))
 	{
-		for(var i = 0; i < self._devices.length; i++)
+		for( i = 0; i < self._devices.length; i++)
 		{
 			if(arrayCmp(self._devices[i].address, query)) selection.push(self._devices[i]);
 		}
@@ -79,7 +80,7 @@ Aquila.prototype.devices = function(query)
 	if(query[0] === ".")
 	{
 		query = query.substring(1);
-		for(var i = 0; i < self._devices.length; i++)
+		for( i = 0; i < self._devices.length; i++)
 		{
 			if(self._devices[i].class === query) selection.push(self._devices[i]);
 		}
@@ -89,7 +90,7 @@ Aquila.prototype.devices = function(query)
 	if(query[0] === "#")
 	{
 		query = query.substring(1);
-		for(var i = 0; i < self._devices.length; i++)
+		for( i = 0; i < self._devices.length; i++)
 		{
 			if(self._devices[i].name === query) selection.push(self._devices[i]);
 		}
@@ -99,7 +100,7 @@ Aquila.prototype.devices = function(query)
 	// lastly, search by _id
 	if(typeof(query) === "string")
 	{
-		for(var i = 0; i < self._devices.length; i++)
+		for( i = 0; i < self._devices.length; i++)
 		{
 			if(self._devices[i]._id === query) selection.push(self._devices[i]);
 		}

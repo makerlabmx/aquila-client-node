@@ -31,7 +31,7 @@ var AquilaDevice = function(manager, device)
 				}
 			}
 		});
-}
+};
 
 util.inherits(AquilaDevice, events.EventEmitter);
 
